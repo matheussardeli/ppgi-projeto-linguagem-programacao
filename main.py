@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 # Configurações iniciais
 config = {
-    'path_gols': 'goalscorers.csv',  # Caminho do arquivo CSV com dados dos artilheiros
-    'path_jogos': 'results.csv',     # Caminho do arquivo CSV com dados dos resultados dos jogos
+    'path_gols': 'https://raw.githubusercontent.com/matheussardeli/ppgi-projeto-linguagem-programacao/main/goalscorers.csv',  # Caminho do arquivo CSV com dados dos artilheiros
+    'path_jogos': 'https://raw.githubusercontent.com/matheussardeli/ppgi-projeto-linguagem-programacao/main/results.csv',     # Caminho do arquivo CSV com dados dos resultados dos jogos
     'path_vitorias': 'shootouts.csv', # Caminho do arquivo CSV com dados das vitórias
     'date_format': '%Y-%m-%d'        # Formato das datas nos arquivos CSV
 }
