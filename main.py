@@ -137,7 +137,7 @@ def plotar_gols_por_competicao(df):
     df (pd.DataFrame): DataFrame contendo os dados dos jogos.
     """
     df['total_goals'] = df['home_score'] + df['away_score']  # Calcula a soma dos gols de cada jogo
-    gols_por_competicao = df.groupby('tournament')['total_goals'].sum().nlargest(10)  # Agrupa e soma gols por competição
+    gols_por_competicao = df.groupby('tournament')['total_goals'].sum().nlargest(10).sort_values(ascending=True)  # Agrupa e soma gols por competição
     plt.figure(figsize=(12, 6))  # Define o tamanho da figura
     gols_por_competicao.plot(kind='barh')  # Plota o gráfico de barras horizontais
     plt.title('Soma de Gols por Competição')
